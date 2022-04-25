@@ -1,0 +1,20 @@
+.titulos_h1-h6{
+    font-size: 250%;
+    color: $colorCuatro;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+}
+
+.logo_img--dimension{
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.animation_hover{
+    transform: scale(1.2);
+    transition: all 0.4s;
+}

@@ -1,0 +1,13 @@
+@mixin predetermined-box($argumento1, $argumento2, $argumento3, $argumento4){
+    margin:$argumento1;
+    padding:$argumento2;
+    width:$argumento3;
+    height:$argumento4;
+}
+
+@mixin conteiner-model($var1,$var2,$var3,$var4){
+    display:$var1;
+    justify-content:$var2;
+    align-items:$var3;
+    flex-direction:$var4;
+}

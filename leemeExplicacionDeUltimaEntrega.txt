@@ -1,0 +1,43 @@
+Buenos días Maxi! Acá te voy a dejar info de todo lo pedido para simplificar:
+
+Con respecto a SASS:
+
+1) "_extends.scss" cumplindo con el punto de utilizar extends, fue para los h1-h6, logos y animaciones.
+    Todo correctamente llamado desde "origen.scss"
+2)"_mixins" cumpliendo con este punto, generé un partial, incorporé "caja predeterminada" y "contenedor modelo". 
+Estos los usé para construir rápidamente el contenedor padre (excepto grids)
+    todo correctamente llamado desde "origen.scss"
+3)"_maps.scss" en la funcion de maps, no se me ocurrió demasiado para hacer, asi que simplemente llamé a la variable
+"mapa de color elemental" y generé los distintos colores, luego los llamé desde "_colores.scss" utilizando el recurso
+"map-get" para traerlos uno por uno, hacia las varialbes "colorUno, colorDos, etc".
+luego llamé todo desde "origen.scss" para seguir con el correcto funcionamiento.
+
+Con respecto a SEO:
+
+1) Tamaño: 
+    la pagina está optimizada para utilizar en 3 dispositivos estándares distintos, moviles, tabletas, y desktop. 
+
+2) imagenes: 
+    Aunque la mayoria de las imagenes las traigo por enlaces externo, en la carpeta "Assets/img" dejo muestra de 2 imagenes 
+    comprimidas, donde las reduje al 50% (aproximadamente).
+
+3) palabras clave:
+
+        Titulo: se le dió en cada sección un nombre diferente, pero referenciando a "full-stack". Según google el titulo se encuentra
+    entre los 200 factores que se tienen en cuenta para posicionar una web.
+
+        Codificación de caracteres correcta:
+    Al estar el meta "charset="utf-8"" no tendremos porblemas para mostrar caracteres.
+
+        descripcion: 
+    Una breve descripción en cada página, para en una lectura rápida, desde el navegador, encontrar lo que busca.
+
+        keywors:
+    "desarrollo, web, full-stack, developer" Palabras utilizadas para llamar a los buscadores locales. Colocadas en todos los html.
+
+
+4) Orden gerárquico de los titulos en correcto orden.
+
+5) Todos los archivos estan en sus correspondientes carpetas y sub carpetas.
+
+

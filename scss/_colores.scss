@@ -1,4 +1,10 @@
-$colorUno: #c2c2c2;
-$colorDos: #a6a8b5;
-$colorTres: #bcbdb1;
-$colorCuatro:#273e4a;
+@import 'maps.scss';
+
+$colorUno: map-get($mapColorElemental, CUno);
+$colorDos: map-get($mapColorElemental, CDos);
+$colorTres: map-get($mapColorElemental, CTres);
+$colorCuatro: map-get($mapColorElemental, CCuatro);
+// $colorUno: #c2c2c2;
+// $colorDos: #a6a8b5;
+// $colorTres: #bcbdb1;
+// $colorCuatro:#273e4a;
