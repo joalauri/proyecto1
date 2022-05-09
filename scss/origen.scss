@@ -154,12 +154,13 @@ section{
     display: flex;
     width: 100%;
     border-bottom: 1px solid $colorDos;
+    margin: auto;
     p{
+        max-width: 50%;
         font-size: medium;
         padding: 5px;
-        margin: 5px;
+        margin: auto;
         text-align: center;
-        border-radius: 10px;
         //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
     }
@@ -186,7 +187,7 @@ section{
         margin: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 5px;
-        object-fit: fill;
+        object-fit: cover;
         }
 }
 .about_main_text{
@@ -198,6 +199,7 @@ section{
     }
     p{
         font-size: large;
+        padding: 5px;
     }
 }
 .section_about{
@@ -233,9 +235,23 @@ section{
     @include conteiner-model(flex, center, center, column);
 }
 .service_conteiner_form{
-    @include conteiner-model(flex, center, center, column);
+    @include conteiner-model(flex, center, center, row);
     margin: 5px;
     padding: 5px;
+    border: 1px solid $colorDos;
+        div{
+        @include conteiner-model(flex, center, center, column);
+        padding: 10px;
+        font-size: small;
+        width: 50%;
+            img{
+                width: 100%;
+                object-fit: contain;
+                margin: 5px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 5px;
+            }
+        }
 }
 .service_main_form{
     width: 70%;
@@ -248,8 +264,12 @@ section{
     border-radius: 10px;
 }
 .send_bottom{
-    width: 50%;
-    text-align: center;
+    background-color:$colorTres;
+    box-shadow: 21px 15px 38px -3px $colorUno;
+    color: $colorCuatro;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 /*----------------------------------------->Dentro del main service(↑)*/
 /*----------------------------------------->Dentro del main Contact(↓)*/
@@ -276,7 +296,7 @@ section{
 /*----------------------------------------->Dentro del main Terms and terms & conditions(↓)*/
 
 .terms_text{
-    margin: 40px;
+    margin: auto;
     padding: 5px;
     max-width: 650px;
 }
@@ -362,6 +382,9 @@ section{
     .index_main_card{
         display: flex;
         flex-flow: column wrap;
+        p{
+            max-width: 100%;
+        }
     }
     .contact_conteiner_form{
         textarea{
@@ -381,6 +404,26 @@ section{
         box-shadow: 0px 0px 1px $colorCuatro;
         max-width: max-content;
         border-radius: 5px;
+    }
+    .service_conteiner_form{
+        @include conteiner-model(flex, center, center, column);
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid $colorDos;
+            div{
+            @include conteiner-model(flex, center, center, column);
+            padding: 10px;
+            width: 100%;
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+    }
+    .about_main_conteiner-img{
+        img{
+            max-width: 90%;
+            }
     }
 }
 @media (min-width:576px) and (max-width:992px){
@@ -421,6 +464,9 @@ section{
     } 
     .index_main_card{
         @include conteiner-model(flex, center, center, column);
+        p{
+            max-width: 85%;
+        }
     }
     nav{
         grid-area: nav;
